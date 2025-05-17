@@ -80,7 +80,7 @@ Follow the steps below to set up the project on your local machine:
 
 ## 📸 Sample Output
 
-> *(Add screenshots or example PDFs here if available)*
+![Fill Form 1](https://github.com/janithsuraweera/CCTV-Qutation-Automate/blob/main/images/fill%201.png)
 
 ## 📜 License
 
