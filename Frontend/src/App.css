@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+body, #root {
+  min-height: 100vh;
+
+  padding: 0;
+  font-family: 'Inter', 'Roboto', Arial, sans-serif;
+  background: linear-gradient(135deg, #e0f2f7 0%, #c8e6c9 100%);
+  color: #333;
+  line-height: 1.6;
+  justify-content: center;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%); /* Darker gradient background */
+  color: #ecf0f1; /* Light text color */
+}
+
+.logo {
+  display: none;
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.app {
+  min-height: 100vh;
+  background: none;
+}
+
+.app-header {
+  background: linear-gradient(90deg, #2196f3 0%, #1976d2 100%);
+  color: white;
+  padding: 1.8rem 1.5rem 1.2rem 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+/* Dark Mode Header Styles */
+body.dark-mode .app-header {
+    background: linear-gradient(90deg, #34495e 0%, #2c3e50 100%); /* Darker header gradient */
+    color: #ecf0f1;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+body.dark-mode .app-header h1 {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.app-main {
+  max-width: 1200px;
+  width: 100%;
+  margin: 2rem auto;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .app-header {
+    padding: 1.2rem 1rem 1rem 1rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .app-header h1 {
+    font-size: 1.6rem;
+  }
+  .app-main {
+    padding: 0 1rem;
+    gap: 1.5rem;
+    margin: 1.5rem auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .app-header h1 {
+    font-size: 1.4rem;
+  }
+  .app-header {
+    padding: 1rem 0.8rem 0.8rem 0.8rem;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+  .app-main {
+    padding: 0 0.8rem;
+    gap: 1rem;
+    margin: 1rem auto;
+  }
+}

@@ -1,0 +1,161 @@
+@media print {
+  /* Styles specifically for printing and PDF generation */
+
+  .quotation-display {
+    box-shadow: none; /* Remove shadow in print */
+    border: none; /* Remove border in print */
+    margin: 0; /* Remove margin in print */
+    padding: 20mm; /* Use physical units for padding */
+    width: 100%; /* Ensure it takes full width available in print */
+    max-width: 100%; /* Ensure it takes full width available in print */
+    font-size: 10pt; /* Standard font size for print */
+    line-height: 1.5; /* Improve readability */
+  }
+
+  .download-group,
+  .print-button {
+    display: none !important; /* Hide download and print buttons in print */
+  }
+
+  .quotation-header-flex {
+      background: #f8f9fa; /* Use a light background instead of gradient for print */
+      border: 1px solid #dee2e6; /* Add a border */
+      border-radius: 8px; /* Smaller border radius */
+      padding: 1rem 1.5rem; /* Adjusted padding */
+      box-shadow: none; /* Remove shadow */
+      margin-bottom: 1.5rem; /* Adjusted margin */
+  }
+
+  .quotation-header-content h2 {
+      color: #333; /* Darker color for print */
+      font-size: 16pt; /* Adjusted font size */
+      text-shadow: none; /* Remove text shadow */
+  }
+
+   .quotation-header-content div {
+        color: #555; /* Darker color for address/contact */
+        font-size: 9pt; /* Adjusted font size */
+        opacity: 1; /* Ensure full opacity */
+   }
+
+   .logo-container {
+        height: 18mm; /* Use physical units */
+        min-width: 18mm;
+        padding: 1mm;
+        box-shadow: none;
+        border: 1px solid #ddd; /* Subtle border */
+   }
+
+   .shop-logo {
+        max-height: 16mm;
+        max-width: 40mm;
+        border-radius: 4px;
+   }
+
+   .quotation-display h3 {
+        color: #333;
+        font-size: 14pt; /* Adjusted font size */
+        margin-bottom: 1.5rem;
+   }
+
+   .quotation-table {
+        border-collapse: collapse; /* Use collapsed border for print */
+        border-spacing: 0; /* Remove spacing */
+        box-shadow: none; /* Remove shadow */
+        border: 1px solid #ddd; /* Add table border */
+        border-radius: 0; /* Remove border radius */
+        margin-bottom: 1.5rem;
+        font-size: 9pt; /* Adjusted font size */
+        min-width: 0; /* Remove min-width constraint */
+   }
+
+   .quotation-table thead tr {
+        background: #e9ecef; /* Light header background */
+   }
+
+   .quotation-table th,
+   .quotation-table td {
+        border: 1px solid #ddd; /* Add cell borders */
+        padding: 8pt 12pt; /* Use pt for padding */
+        text-align: left;
+        color: #333;
+   }
+
+    .quotation-table th {
+        font-weight: bold; /* Ensure headers are bold */
+        color: #495057;
+    }
+
+   .quotation-table tbody tr {
+        background-color: #fff;
+        box-shadow: none; /* Remove row shadow */
+        border-radius: 0; /* Remove row border radius */
+   }
+
+   .quotation-table tbody tr:hover {
+        background: #fff; /* No hover effect in print */
+   }
+
+   .quotation-table td:first-child,
+   .quotation-table td:last-child {
+        border-radius: 0; /* Remove cell border radius */
+   }
+
+   .quotation-table tfoot tr td {
+        background-color: #e9ecef;
+        border-top: 1px solid #ddd;
+        font-weight: bold;
+        padding: 8pt 12pt;
+   }
+
+    .quotation-table tfoot tr:last-child td:first-child,
+    .quotation-table tfoot tr:last-child td:last-child {
+         border-bottom-left-radius: 0;
+         border-bottom-right-radius: 0;
+    }
+
+   .quotation-notes {
+        margin-top: 1.5rem;
+        padding: 1rem 1.2rem;
+        background: #f8f9fa;
+        border: 1px solid #dee2e6;
+        box-shadow: none;
+        border-radius: 8px;
+        font-size: 9pt;
+   }
+
+    .quotation-notes strong {
+        color: #333;
+    }
+
+   .quotation-footer {
+        margin-top: 2rem;
+        padding: 1rem 1.5rem;
+        border-top: 1px solid #dee2e6;
+        text-align: center;
+        color: #495057;
+        font-size: 9pt;
+        font-weight: normal;
+        letter-spacing: 0.2px;
+        background: #e9ecef;
+        border-radius: 8px;
+        box-shadow: none;
+   }
+
+  /* Ensure content does not break across pages awkwardly */
+  .quotation-table,
+  .quotation-notes,
+  .quotation-footer {
+      page-break-inside: avoid; /* Try to keep these elements on one page */
+  }
+
+  /* Adjust spacing for better document flow */
+   .quotation-display > div {
+       margin-bottom: 1rem; /* General spacing between sections */
+   }
+
+   .quotation-header-flex + h3 { /* Adjust margin if h3 follows header */
+       margin-top: 1.5rem;
+   }
+
+} 
