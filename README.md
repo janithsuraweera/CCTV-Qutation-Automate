@@ -1,4 +1,13 @@
+Here's an improved version of your `README.md` with the following updates:
 
+* ✅ Fixed spelling errors (e.g., "Qutation" → "Quotation", "genarat" → "generate")
+* ✅ Properly formatted image section with adjusted size for display
+* ✅ Optional database mention made clearer
+* ✅ Cleaned code blocks and markdown formatting
+
+Let me know if you'd like badge additions, a live deployment section, or a LICENSE file as well.
+
+---
 
 ```markdown
 # CCTV Quotation Automate 🛠️📄
@@ -26,7 +35,7 @@ Perfect for:
 - **Backend**: Python, Flask
 - **Frontend**: HTML, CSS (Bootstrap)
 - **PDF Generation**: `reportlab` or `WeasyPrint` *(depending on implementation)*
-- **Database**: *(Optional — add if implemented)*
+- **Database**: *(Optional – e.g., SQLite, can be added for storing past quotations/customers)*
 
 ## 📁 Project Structure
 
@@ -49,8 +58,8 @@ Follow the steps below to set up the project on your local machine:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/janithsuraweera/CCTV-Qutation-Automate.git
-   cd CCTV-Qutation-Automate
+   git clone https://github.com/janithsuraweera/CCTV-Quotation-Automate.git
+   cd CCTV-Quotation-Automate
 ````
 
 2. Create and activate a virtual environment:
@@ -80,7 +89,19 @@ Follow the steps below to set up the project on your local machine:
 
 ## 📸 Sample Output
 
-![Fill Form 1](https://github.com/janithsuraweera/CCTV-Qutation-Automate/blob/main/images/fill%201.png)
+<p float="left">
+  <img src="https://github.com/janithsuraweera/CCTV-Quotation-Automate/blob/main/images/front%20view.png" width="45%" alt="Front View"/>
+  <img src="https://github.com/janithsuraweera/CCTV-Quotation-Automate/blob/main/images/fill%201.png" width="45%" alt="Fill Form 1"/>
+</p>
+
+<p float="left">
+  <img src="https://github.com/janithsuraweera/CCTV-Quotation-Automate/blob/main/images/fill%202.png" width="45%" alt="Fill Form 2"/>
+  <img src="https://github.com/janithsuraweera/CCTV-QuotationAutomate/blob/main/images/genarat%20form.png" width="45%" alt="Generate Form"/>
+</p>
+
+<p align="center">
+  <img src="https://github.com/janithsuraweera/CCTV-Quotation-Automate/blob/main/images/validation.png" width="50%" alt="Validation Message"/>
+</p>
 
 ## 📜 License
 
@@ -100,13 +121,13 @@ For suggestions or support, please open an issue or connect with me on [LinkedIn
 
 ---
 
-Let me know if you'd like:
+### ✅ Next Suggestions:
 
-- A LICENSE file generated automatically
-- Badges (e.g., MIT license, made with Flask, etc.)
-- Screenshots added  
-- A hosted version (e.g., using Render or Replit)
+- Would you like me to:
+  - Add **shields.io badges**? (Flask, Python version, MIT license, etc.)
+  - Generate a `LICENSE` file?
+  - Create a **live deployment guide** (e.g., Render, Replit)?
+  - Add a `.env.example` for future config?
 
-I can help with all of those!
+Let me know and I’ll help with those right away.
 ```
-
