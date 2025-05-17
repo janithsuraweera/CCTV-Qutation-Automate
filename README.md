@@ -1,133 +1,157 @@
-Here's an improved version of your `README.md` with the following updates:
 
-* ✅ Fixed spelling errors (e.g., "Qutation" → "Quotation", "genarat" → "generate")
-* ✅ Properly formatted image section with adjusted size for display
-* ✅ Optional database mention made clearer
-* ✅ Cleaned code blocks and markdown formatting
+```markdown
+# 📋 CCTV Quotation Automate
 
-Let me know if you'd like badge additions, a live deployment section, or a LICENSE file as well.
+**CCTV Quotation Automate** is a lightweight, responsive, and entirely frontend-based web app for generating CCTV installation quotations. Built with **HTML**, **CSS**, and **JavaScript**, it enables users to quickly create, preview, and print clean, professional quotations — no backend or server setup needed.
 
 ---
 
-```markdown
-# CCTV Quotation Automate 🛠️📄
-
-**CCTV Quotation Automate** is a lightweight web application built with **Python (Flask)** to automate the process of creating CCTV system quotations. It streamlines form handling, PDF generation, and makes quotation management simple for small businesses and freelance technicians.
-
 ## 🚀 Features
 
-- 📝 User-friendly quotation form
-- 📄 Automatic PDF quotation generation
-- 🗂️ Customer and quotation management (basic)
-- ⚡ Fast and responsive Flask backend
-- 🖨️ Printable and downloadable quotation documents
+- 📝 Simple and intuitive quotation input form  
+- 📄 Automatically generates a styled quotation preview  
+- 🎨 Clean, print-ready design with custom styling  
+- 🖨️ Save or print quotations as PDF directly via the browser  
+- 🌐 Fully frontend — no installation, no backend, no database  
 
-## 💼 Use Case
+---
 
-Perfect for:
+## 💼 Ideal For
 
-- Small CCTV businesses
-- Freelancers offering security system installations
-- Anyone needing quick and customizable quotation generation without using Excel or Word manually
+This tool is perfect for:
 
-## 🧰 Technologies Used
+- Small CCTV installation businesses  
+- Freelancers in the security system space  
+- Anyone needing fast and professional-looking quotations without Excel or Word  
 
-- **Backend**: Python, Flask
-- **Frontend**: HTML, CSS (Bootstrap)
-- **PDF Generation**: `reportlab` or `WeasyPrint` *(depending on implementation)*
-- **Database**: *(Optional – e.g., SQLite, can be added for storing past quotations/customers)*
+---
+
+## 🧰 Tech Stack
+
+- **HTML5**
+- **CSS3** (with Bootstrap 4)
+- **JavaScript** (Vanilla)
+- ✅ No frameworks, no backend, no database
+
+---
 
 ## 📁 Project Structure
 
 ```
 
-CCTV-Quotation-Automate/
-├── static/
-│   └── css, js, assets...
-├── templates/
-│   └── HTML templates (Jinja2)
-├── app.py
-├── requirements.txt
+CCTV-Qutation-Automate/
+├── css/
+│   └── styles.css
+├── js/
+│   └── script.js
+├── images/
+│   └── (UI screenshots)
+├── index.html
 └── README.md
 
 ````
 
-## ⚙️ Installation
+---
 
-Follow the steps below to set up the project on your local machine:
+## ⚙️ Getting Started
 
-1. Clone the repository:
+No setup or dependencies required — just open and go!
+
+### 🔧 Steps:
+1. Clone this repository:
    ```bash
-   git clone https://github.com/janithsuraweera/CCTV-Quotation-Automate.git
-   cd CCTV-Quotation-Automate
+   git clone https://github.com/janithsuraweera/CCTV-Qutation-Automate.git
 ````
 
-2. Create and activate a virtual environment:
+2. Open the `index.html` file in your preferred browser.
 
-   ```bash
-   python -m venv venv
-   source venv/bin/activate        # On Windows: venv\Scripts\activate
-   ```
+That’s it — you’re ready to start generating quotations!
 
-3. Install the dependencies:
+---
 
-   ```bash
-   pip install -r requirements.txt
-   ```
+## 🌐 Live Demo *(Optional)*
 
-4. Run the Flask application:
+You can easily deploy this project using **GitHub Pages**.
 
-   ```bash
-   python app.py
-   ```
+> **Live Demo:** [https://janithsuraweera.github.io/CCTV-Qutation-Automate](https://janithsuraweera.github.io/CCTV-Qutation-Automate)
 
-5. Open your browser and go to:
+To deploy:
 
-   ```
-   http://localhost:5000
-   ```
+1. Push your project to a GitHub repo.
+2. Go to **Settings > Pages**.
+3. Set source to `main` branch and `/root` directory.
+4. Your app will be live in seconds!
 
-## 📸 Sample Output
+---
 
-<p float="left">
-  <img src="https://github.com/janithsuraweera/CCTV-Quotation-Automate/blob/main/images/front%20view.png" width="45%" alt="Front View"/>
-  <img src="https://github.com/janithsuraweera/CCTV-Quotation-Automate/blob/main/images/fill%201.png" width="45%" alt="Fill Form 1"/>
-</p>
+## 🖼️ Screenshots
 
-<p float="left">
-  <img src="https://github.com/janithsuraweera/CCTV-Quotation-Automate/blob/main/images/fill%202.png" width="45%" alt="Fill Form 2"/>
-  <img src="https://github.com/janithsuraweera/CCTV-QuotationAutomate/blob/main/images/genarat%20form.png" width="45%" alt="Generate Form"/>
-</p>
+### 🏠 Home Page
 
-<p align="center">
-  <img src="https://github.com/janithsuraweera/CCTV-Quotation-Automate/blob/main/images/validation.png" width="50%" alt="Validation Message"/>
-</p>
+![Front View](https://github.com/janithsuraweera/CCTV-Qutation-Automate/blob/main/images/front%20view.png)
+
+### ✍️ Quotation Form
+
+![Form 1](https://github.com/janithsuraweera/CCTV-Qutation-Automate/blob/main/images/fill%201.png)
+![Form 2](https://github.com/janithsuraweera/CCTV-Qutation-Automate/blob/main/images/fill%202.png)
+
+### 📄 Quotation Preview
+
+![Preview](https://github.com/janithsuraweera/CCTV-Qutation-Automate/blob/main/images/genarat%20form.png)
+
+### ✅ Form Validation
+
+![Validation](https://github.com/janithsuraweera/CCTV-Qutation-Automate/blob/main/images/validation.png)
+
+---
 
 ## 📜 License
 
 © 2025 [Janith Suraweera](https://github.com/janithsuraweera)
-This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for more details.
-
-## 🤝 Contributing
-
-Pull requests are welcome. For major changes, please open an issue first to discuss what you'd like to improve.
+This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-📬 **Contact**
-For suggestions or support, please open an issue or connect with me on [LinkedIn](https://www.linkedin.com/in/janithsuraweera).
+## 🤝 Contributing
 
+Contributions and suggestions are welcome!
+
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature-xyz`)
+3. Commit your changes
+4. Push to the branch
+5. Open a Pull Request
+
+---
+
+## 📬 Contact
+
+For feedback or collaboration:
+
+* 💼 [LinkedIn – Janith Suraweera](https://www.linkedin.com/in/janithsuraweera)
+* 🐛 [Open an Issue](https://github.com/janithsuraweera/CCTV-Qutation-Automate/issues)
+
+---
+
+## 🔖 Optional Project Badges (Add if desired)
+
+You can place these at the top of the README:
+
+```markdown
+![GitHub repo size](https://img.shields.io/github/repo-size/janithsuraweera/CCTV-Qutation-Automate)
+![GitHub stars](https://img.shields.io/github/stars/janithsuraweera/CCTV-Qutation-Automate)
+![GitHub forks](https://img.shields.io/github/forks/janithsuraweera/CCTV-Qutation-Automate)
+![MIT License](https://img.shields.io/github/license/janithsuraweera/CCTV-Qutation-Automate)
 ```
 
 ---
 
-### ✅ Next Suggestions:
+```
 
-- Would you like me to:
-  - Add **shields.io badges**? (Flask, Python version, MIT license, etc.)
-  - Generate a `LICENSE` file?
-  - Create a **live deployment guide** (e.g., Render, Replit)?
-  - Add a `.env.example` for future config?
+Would you like me to:
+- Create the `LICENSE` file?
+- Add GitHub Pages deployment support (`.nojekyll`, `CNAME`, etc.)?
+- Add favicon or styling enhancements?
 
-Let me know and I’ll help with those right away.
+Let me know and I can generate everything for you!
 ```
